@@ -15,7 +15,7 @@ public class Demo {
 		
 		try
 		{
-			 FileReader fileReader = new FileReader("/home/omer/Desktop/test_hw1.txt");
+			 FileReader fileReader = new FileReader("/home/omer/Desktop/testIt.txt");
 			 BufferedReader bufferedReader = new BufferedReader(fileReader);
 			 
 			 while((line = bufferedReader.readLine()) != null)
