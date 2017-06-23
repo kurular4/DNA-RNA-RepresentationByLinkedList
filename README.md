@@ -1,3 +1,2 @@
 # Project-1
-This project provides you a circular linked list firstly.
-And then, there is several operation on circular linked list based on the context of DNA RNA sequence
+Here is several projects and each one is encoded to emphasize the use of data structures.
