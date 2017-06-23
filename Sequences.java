@@ -293,35 +293,7 @@ public class Sequences {
 		}
 	}
 	
-	public void maxOverlap(int pos1, int pos2) // taking first node of pos2 and till I find that node's element in pos1, put in a loop
-	{ // then I check that index and next elemans of that index with pos2's elemans to see if it is same
-		if(!arrayseq[pos1].getType().equals(arrayseq[pos2].getType()) || arrayseq[pos1].getType().equals("EMPTY") || arrayseq[pos2].getType().equals("EMPTY"))
-		{
-			System.out.println("Max-overlapping sequence between " + pos1 + "th and " + pos2 + "th sequence:");
-			System.out.println("No overlap");	
-		}
-		else
-		{
-		DoubleCircularLinkedList<String> overlap = new DoubleCircularLinkedList<>();
-		int s1 = arrayseq[pos1].size() - 1;
-		//int s2 = arrayseq[pos2].size() - 1;
-		int c = 0;
-		int c2 = 0;
-		while(!arrayseq[pos1].get(s1).equals(arrayseq[pos2].get(0)))
-		{
-			s1--;
-		}
-		
-		while(arrayseq[pos1].get(s1).equals(arrayseq[pos2].get(c2)))
-		{
-			overlap.addFirst(arrayseq[pos1].get(s1));
-			s1++;
-			c2++;
-		}
-		System.out.println("Max-overlapping sequence between " + pos1 + "th and " + pos2 + "th sequence: \n" + overlap.reverse());
 	
-		}
-	}
 	
 	
 	/*
